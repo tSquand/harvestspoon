@@ -1,0 +1,16 @@
+body {
+    background-color: pink;
+}
+
+.input-form {
+    display: flex;
+   
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+button {
+    display: block;
+}
