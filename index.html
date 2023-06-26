@@ -6,22 +6,38 @@
 </head>
 
 <body>
-    <form id="input-form">
-        <h3>Order request form</h3>
-        <label for="name" >First and last name:</label>
-        <input type="text" id="name">
-        <label for="number">Phone number:</label> 
-        <input type="text" id="number"> 
-        <label for="Email">Email address:</label>
-        <input type="email" id="email">
-        <label for="date">Requested order date:</label>
-        <input type="date" id="date">
-        <label for="guests">Estimated number of guests:</label>
-        <input type="number" id="guests">
-        <label for="notes">Please enter any additional information for your event or dietary restrictions of your group</label>
-        <textarea id="notes" rows="5"></textarea>
+    <div class="form-container">
+        <form id="input-form">
+            <h2>Order request form</h2>
 
-        <button type="button" onclick="getValue()">Submit</button>
-    </form>
+            <div class="group1">
+                <label for="first-name" >First name:</label>
+                <input type="text" id="first-name" size="10">
+                <label for="last-name">Last name:</label>
+                <input type="text" id="last-name" size="10">
+
+            </div>
+            <div class="group2">
+                <label for="Email">Email:</label>
+                <input type="email" id="email">
+                <label for="number">Phone number:</label> 
+                <input type="text" id="number" size="10"> 
+
+            </div>
+            <div class="group3">
+                <label for="date">Order date:</label>
+                <input type="date" id="date">
+                <label for="guests">Estimated number of guests:</label>
+                <input type="number" id="guests" size="10">                
+            </div>
+            <div class="group4">           
+                <label for="notes">Please enter any additional information or dietary restrictions</label>
+            </div>
+            <textarea id="notes" rows="5" cols="50"></textarea>
+        
+
+            <button type="button" onclick="getValue()">Submit</button>
+        </form>
+    </div>
 
 </body>

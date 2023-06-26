@@ -2,15 +2,34 @@ body {
     background-color: pink;
 }
 
-.input-form {
-    display: flex;
-   
-}
 
 label {
-    display: block;
     margin-bottom: 5px;
 }
+
 button {
     display: block;
+}
+
+
+#guests {
+    width: 40px;
+}
+
+#date {
+    width: 100px;
+}
+
+#email {
+    width: 110px;
+}
+
+div {
+    margin-bottom: 5px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
