@@ -2,42 +2,75 @@
 <head>
     <title>Harvest Spoon Catering</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="index.js"></script>
+    <script src="index.js" async></script>
 </head>
-
+<header>
+    <img src="harvest2.jpg">
+</header>
 <body>
-    <div class="form-container">
-        <form id="input-form">
-            <h2>Order request form</h2>
+    <span id="menuBar">
+        <button id="canapes" onclick="displaySection('canapes')">Canapes</button>
+        <button id="dessert" onclick="displaySection('dessert')">Dessert</button>
+        <button id="charcuterie" onclick="displaySection('charcuterie')">Charcuterie</button>
+    </span>
 
-            <div class="group1">
-                <label for="first-name" >First name:</label>
-                <input type="text" id="first-name" size="10">
-                <label for="last-name">Last name:</label>
-                <input type="text" id="last-name" size="10">
-
-            </div>
-            <div class="group2">
-                <label for="Email">Email:</label>
-                <input type="email" id="email">
-                <label for="number">Phone number:</label> 
-                <input type="text" id="number" size="10"> 
-
-            </div>
-            <div class="group3">
-                <label for="date">Order date:</label>
-                <input type="date" id="date">
-                <label for="guests">Estimated number of guests:</label>
-                <input type="number" id="guests" size="10">                
-            </div>
-            <div class="group4">           
-                <label for="notes">Please enter any additional information or dietary restrictions</label>
-            </div>
-            <textarea id="notes" rows="5" cols="50"></textarea>
-        
-
-            <button type="button" onclick="getValue()">Submit</button>
-        </form>
+    <div id="canapesSection" style="display: none;">
+        <!-- canapes menu -->
+        <ul>
+            <li>Crostini with Spinach-Artichoke Dip and Cashew Parmesan</li>
+            <li>Pastry Puff with Pimento Cheese, Pepper Jelly, and Coconut Bacon</li>
+            <li>Polenta Squares with Mushroom Ragout and Cashew Parmesan</li>
+            <li>Pesto Risotto Fritters with Balsamic Tomato Relish </li>
+        </ul>
+    </div>
+    <div id="dessertSection" style="display: none;">
+        <!-- dessert menu -->
+        <ul>
+            <li>Vanilla Custard with Strawberry Coulis and Shortbread</li>
+            <li>Tiramisu with Vegan "Marscapone" and Chocolate-Espresso Shortbread</li>
+            <li>Cheesecake with Citrus Jelly and Biscoff Crumble</li>
+        </ul>
+    </div>
+    <div id="charcuterieSection" style="display: none;">
+        <!-- charcuterie menu -->
     </div>
 
+    <button id="modalBtn">Request an order</button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+                <div class="form-container">
+                    <form id="input-form">
+                        <h2>Contact us about your event</h2>
+            
+                        <div class="group1">
+                            <label for="first-name" >First name:</label>
+                            <input type="text" id="first-name" size="10">
+                            <label for="last-name">Last name:</label>
+                            <input type="text" id="last-name" size="10">
+            
+                        </div>
+                        <div class="group2">
+                            <label for="Email">Email:</label>
+                            <input type="email" id="email">
+                            <label for="number">Phone number:</label> 
+                            <input type="text" id="number" size="10"> 
+            
+                        </div>
+                        <div class="group3">
+                            <label for="date">Order date:</label>
+                            <input type="date" id="date">
+                            <label for="guests">Estimated number of guests:</label>
+                            <input type="number" id="guests" size="10">                
+                        </div>
+                        <div class="group4">           
+                            <label for="notes">Please enter any additional information or dietary restrictions</label>
+                        </div>
+                        <textarea id="notes" rows="5" cols="50"></textarea> 
+
+                        <button type="button" onclick="getValue()">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>      
 </body>
