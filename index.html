@@ -4,11 +4,34 @@
     <link rel="stylesheet" href="styles.css">
     <script src="index.js" async></script>
 </head>
-<header>
-    <img src="harvest2.jpg">
-</header>
+
 <body>
-    <span id="menuBar">
+    <div id="main-header">HARVEST SPOON</div>
+    <div id="sub-header">Vegan Catering Services</div>
+
+    <div id="contact-bar">
+        <p> harvestspoonfl </p>
+    </div>
+    <div id="column-container">
+        <div id="about-us-section">
+            <div id="inner-content">
+                <h2>The experienced team from Bread and Roses Kitchen (BARK) is excited to present Harvest Spoon!</h2>
+                <img src="harvest2.jpg">
+                <p>We're a vegan culinary service specializing in handcrafted charcuterie, canapés, and full course meals. All made from scratch, we provide unique and delicious vegan fare for a range of needs, from private dinners to large events.</p>
+                <h3> We are here to deliver a one of a kind, bespoke service to the community!</h3>
+                <p>Harvest Spoon is proud to be serving the diverse clientele of Tallahassee with accessible, upscale vegan menus that are as flavorful as they are healthy! Harvest Spoon is ready to be a part of your next special occation!</p>
+                <h2> For all inquiries:</h2>
+                <h2> Email us at HarvestSpoonFL@gmail.com</h2>
+                <h2>Instagram: HarvestSpoonFL</h2>
+            </div>
+        </div>
+
+        <div id="menu-section">
+            <button>See our menu!</button>
+        </div>
+    </div>
+
+    <span id="menuBar" style="display: none;">
         <button id="canapes" onclick="displaySection('canapes')">Canapes</button>
         <button id="dessert" onclick="displaySection('dessert')">Dessert</button>
         <button id="charcuterie" onclick="displaySection('charcuterie')">Charcuterie</button>
@@ -27,7 +50,7 @@
         <!-- dessert menu -->
         <ul>
             <li>Vanilla Custard with Strawberry Coulis and Shortbread</li>
-            <li>Tiramisu with Vegan "Marscapone" and Chocolate-Espresso Shortbread</li>
+            <li>Tiramisu with Marscapone and Chocolate-Espresso Shortbread</li>
             <li>Cheesecake with Citrus Jelly and Biscoff Crumble</li>
         </ul>
     </div>
@@ -35,7 +58,7 @@
         <!-- charcuterie menu -->
     </div>
 
-    <button id="modalBtn">Request an order</button>
+    <button id="modalBtn" style="display: none;">Request an order</button>
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
