@@ -23,7 +23,7 @@
 
 
 body {
-    background-color: #feffec;
+    background-color: rgb(255, 246, 234);
 }
 
 #main-header {
@@ -32,6 +32,7 @@ body {
     font-size:  3.2em;
     display: flex;
     justify-content: center;
+    color: rgb(115, 94, 89);
 }
 
 #sub-header {
@@ -39,6 +40,7 @@ body {
     font-size: 1.5em;
     display: flex;
     justify-content: center;
+    color: rgb(115, 94, 89);
 }
 
 h2 {
@@ -46,11 +48,6 @@ h2 {
     font-weight: 350;
 }
 
-#column-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
 
 #about-us-section {
     flex: 1;
@@ -64,17 +61,35 @@ h2 {
     
 }
 
-#contact-bar {
-    background-color: black;
+#menu-button-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#view-menu-button {
+background-color: rgb(115, 94, 89);
+color: rgb(255, 246, 234);
+cursor: pointer;
 }
 
 #inner-content {
     max-width: 70%;
     margin: auto;
+    color: rgb(115, 94, 89);
 }
 
-#menu-section {
-    flex:1;
+#header-div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#email-button {
+    background-color: rgb(115, 94, 89);
+    color: rgb(255, 246, 234);
+    cursor: pointer;
+
 }
 
 label {

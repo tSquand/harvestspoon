@@ -4,19 +4,26 @@
     <link rel="stylesheet" href="styles.css">
     <script src="index.js" async></script>
 </head>
-
+<header>
+    <div style="display: flex; justify-content: flex-end; align-items: center;">
+        <span>
+            <img src="icons8-instagram.svg" alt="instagram" style="width:35px; height: auto;">
+        </span>
+        <button id="email-button">harvestspoonfl@gmail.com</button> 
+    </div>
+</header>
 <body>
     <div id="main-header">HARVEST SPOON</div>
     <div id="sub-header">Vegan Catering Services</div>
 
-    <div id="contact-bar">
-        <p> harvestspoonfl </p>
+    <div id="menu-button-bar">
+        <button id="view-menu-button"> View our menu! </button>
     </div>
     <div id="column-container">
         <div id="about-us-section">
             <div id="inner-content">
                 <h2>The experienced team from Bread and Roses Kitchen (BARK) is excited to present Harvest Spoon!</h2>
-                <img src="harvest2.jpg">
+                <img src="harvest3.jpg" alt="harvest spoon">
                 <p>We're a vegan culinary service specializing in handcrafted charcuterie, canapés, and full course meals. All made from scratch, we provide unique and delicious vegan fare for a range of needs, from private dinners to large events.</p>
                 <h3> We are here to deliver a one of a kind, bespoke service to the community!</h3>
                 <p>Harvest Spoon is proud to be serving the diverse clientele of Tallahassee with accessible, upscale vegan menus that are as flavorful as they are healthy! Harvest Spoon is ready to be a part of your next special occation!</p>
@@ -25,15 +32,11 @@
                 <h2>Instagram: HarvestSpoonFL</h2>
             </div>
         </div>
-
-        <div id="menu-section">
-            <button>See our menu!</button>
-        </div>
     </div>
 
     <span id="menuBar" style="display: none;">
-        <button id="canapes" onclick="displaySection('canapes')">Canapes</button>
-        <button id="dessert" onclick="displaySection('dessert')">Dessert</button>
+        <button id="canapes" onclick="displaySection('canapes')">Savory</button>
+        <button id="dessert" onclick="displaySection('dessert')">Sweet</button>
         <button id="charcuterie" onclick="displaySection('charcuterie')">Charcuterie</button>
     </span>
 
