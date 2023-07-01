@@ -71,6 +71,7 @@ h2 {
 background-color: rgb(115, 94, 89);
 color: rgb(255, 246, 234);
 cursor: pointer;
+font-size: 1.6em;
 }
 
 #inner-content {
@@ -164,4 +165,45 @@ div {
 img {
     width: 200px;
     height: auto;
+}
+
+#canapes {
+    background-color: rgb(115, 94, 89);
+    color: rgb(255, 246, 234);
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+#charcuterie {
+    background-color: rgb(115, 94, 89);
+    color: rgb(255, 246, 234);
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+#menuBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#canapesSection {
+    font-family: 'Boston Angel';
+    font-weight: 300;
+    font-size: 1.3em;
+    color: rgb(115, 94, 89);
+    
+}
+
+#savoryColumns {
+    display : flex;
+    justify-content: space-around;
+    padding: 0 15%;
+}
+
+#savoryColumns h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

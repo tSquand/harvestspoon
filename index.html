@@ -33,32 +33,54 @@
             </div>
         </div>
     </div>
+    <div id="menu-container">
+        <button id="back-home-button" style="display: none;">Back to Home</button>
+        <span id="menuBar" style="display: none;">
+            <button id="canapes" onclick="displaySection('canapes')">Canapes</button>
+            <button id="charcuterie" onclick="displaySection('charcuterie')">Charcuterie</button>
+        </span>
 
-    <span id="menuBar" style="display: none;">
-        <button id="canapes" onclick="displaySection('canapes')">Savory</button>
-        <button id="dessert" onclick="displaySection('dessert')">Sweet</button>
-        <button id="charcuterie" onclick="displaySection('charcuterie')">Charcuterie</button>
-    </span>
+        <div id="canapesSection" style="display: none;">
+            <h1>Savory</h1>
+            <div id="menuColumns">
+                <div>
+                    
+                    <h2>One Bite</h2>
+                    <ul id="savory">
+                        <li>Crostini with Spinach-Artichoke Dip and Cashew Parmesan</li>
+                        <li>Pastry Puff with Pimento Cheese, Pepper Jelly, and Coconut Bacon</li>
+                        <li>Polenta Squares with Mushroom Ragout and Cashew Parmesan</li>
+                        <li>Pesto Risotto Fritters with Balsamic Tomato Relish </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Two Bites</h2>
+                    <ul id="twoBites">
+                        <li>Fried Grit Cake with Tofu Ricotta, Tomato Jam, and Basil Oil</li>
+                        <li>Pasty Puff with Cashew Goat Cheese, Fig Jam, and Crushed Pecans</li>
+                        <li>Tart with Mushroom, Onion, and Spinach</li>
+                        <li>Potato and Caramelized Onion Pierogi with Horseradish Cream</li>
+                        <li>Oyster Mushroom Crab Cakes with Remoulade and Dill</li>
+                    </ul>
+                </div>
+                <div>
+                <h1>Sweet</h1>
+                <ul id="sweet">
+                    <li>Vanilla Custard with Strawberry Coulis and Shortbread</li>
+                    <li>Tiramisu with Marscapone and Chocolate-Espresso Shortbread</li>
+                    <li>Cheesecake with Citrus Jelly and Biscoff Crumble</li>
+                </ul>
+                </div>
+            </div>
+        </div>
 
-    <div id="canapesSection" style="display: none;">
-        <!-- canapes menu -->
-        <ul>
-            <li>Crostini with Spinach-Artichoke Dip and Cashew Parmesan</li>
-            <li>Pastry Puff with Pimento Cheese, Pepper Jelly, and Coconut Bacon</li>
-            <li>Polenta Squares with Mushroom Ragout and Cashew Parmesan</li>
-            <li>Pesto Risotto Fritters with Balsamic Tomato Relish </li>
-        </ul>
-    </div>
-    <div id="dessertSection" style="display: none;">
-        <!-- dessert menu -->
-        <ul>
-            <li>Vanilla Custard with Strawberry Coulis and Shortbread</li>
-            <li>Tiramisu with Marscapone and Chocolate-Espresso Shortbread</li>
-            <li>Cheesecake with Citrus Jelly and Biscoff Crumble</li>
-        </ul>
-    </div>
-    <div id="charcuterieSection" style="display: none;">
-        <!-- charcuterie menu -->
+        <div id="charcuterieSection" style="display: none;">
+            <div>
+                <div>
+                    
+                </div>
+            </div>
+        </div>
     </div>
 
     <button id="modalBtn" style="display: none;">Request an order</button>
