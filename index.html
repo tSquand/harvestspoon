@@ -2,14 +2,21 @@
 <head>
     <title>Harvest Spoon Catering</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="index.js" async></script>
 </head>
 <header>
     <div style="display: flex; justify-content: flex-end; align-items: center;">
         <span>
-            <img src="icons8-instagram.svg" alt="instagram" style="width:35px; height: auto;">
+            <a href="https://www.instagram.com/harvestspoonevents/" target ="_blank">
+            <img src="icons8-instagram.svg" alt="instagram" style="width:36px; height: auto;">
+            </a>
+        </span> 
+        <span>
+            <a href="mailto:harvestspoonfl@gmail.com" style="color: inherit; text-decoration: none;">
+            <i class="material-icons" style="font-size:36px">mail</i>
+            </a>
         </span>
-        <button id="email-button">harvestspoonfl@gmail.com</button> 
     </div>
 </header>
 <body>
@@ -23,7 +30,7 @@
         <div id="about-us-section">
             <div id="inner-content">
                 <h2>The experienced team from Bread and Roses Kitchen (BARK) is excited to present Harvest Spoon!</h2>
-                <img src="harvest3.jpg" alt="harvest spoon">
+                <img src="harvest4.jpg" alt="harvest spoon">
                 <p>We're a vegan culinary service specializing in handcrafted charcuterie, canapés, and full course meals. All made from scratch, we provide unique and delicious vegan fare for a range of needs, from private dinners to large events.</p>
                 <h3> We are here to deliver a one of a kind, bespoke service to the community!</h3>
                 <p>Harvest Spoon is proud to be serving the diverse clientele of Tallahassee with accessible, upscale vegan menus that are as flavorful as they are healthy! Harvest Spoon is ready to be a part of your next special occation!</p>
@@ -34,17 +41,17 @@
         </div>
     </div>
     <div id="menu-container">
-        <button id="back-home-button" style="display: none;">Back to Home</button>
+        <button id="back-home-button" style="display: none;">
+            <i class="material-icons" style="font-size: 30px; color: rgb(115,94,89);">arrow_back</i>
+            </button>
         <span id="menuBar" style="display: none;">
-            <button id="canapes" onclick="displaySection('canapes')">Canapes</button>
+            <button id="canapes" onclick="displaySection('canapes')">Canapés</button>
             <button id="charcuterie" onclick="displaySection('charcuterie')">Charcuterie</button>
         </span>
 
         <div id="canapesSection" style="display: none;">
-            <h1>Savory</h1>
-            <div id="menuColumns">
-                <div>
-                    
+            <div id="savoryColumns">
+                <div>                   
                     <h2>One Bite</h2>
                     <ul id="savory">
                         <li>Crostini with Spinach-Artichoke Dip and Cashew Parmesan</li>
@@ -57,27 +64,78 @@
                     <h2>Two Bites</h2>
                     <ul id="twoBites">
                         <li>Fried Grit Cake with Tofu Ricotta, Tomato Jam, and Basil Oil</li>
-                        <li>Pasty Puff with Cashew Goat Cheese, Fig Jam, and Crushed Pecans</li>
+                        <li>Pastry Puff with Cashew Goat Cheese, Fig Jam, and Crushed Pecans</li>
                         <li>Tart with Mushroom, Onion, and Spinach</li>
                         <li>Potato and Caramelized Onion Pierogi with Horseradish Cream</li>
                         <li>Oyster Mushroom Crab Cakes with Remoulade and Dill</li>
                     </ul>
-                </div>
-                <div>
-                <h1>Sweet</h1>
-                <ul id="sweet">
-                    <li>Vanilla Custard with Strawberry Coulis and Shortbread</li>
-                    <li>Tiramisu with Marscapone and Chocolate-Espresso Shortbread</li>
-                    <li>Cheesecake with Citrus Jelly and Biscoff Crumble</li>
-                </ul>
+                </div>            
+            </div>
+            <div>
+                <div id="sweetColumns">
+                    <div>
+                        <h2>Trifles</h2>
+                        <ul id="trifles">
+                            <li>Vanilla Custard with Strawberry Coulis and Shortbread</li>
+                            <li>Tiramisu with Marscapone and Chocolate-Espresso Shortbread</li>
+                            <li>Cheesecake with Citrus Jelly and Biscoff Crumble</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Pastries</h2>
+                        <ul id="pastry">
+                            <li>Cream Puff topped with Chocolate Ganache</li>
+                            <li>Cinnamon-Apple Tart with Vanilla Coco-Whip and Toasted Almond Crumble</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div id="charcuterieSection" style="display: none;">
             <div>
-                <div>
-                    
+                <div id="board-choice">
+                    <div id="small-board">
+                        Small Charcuterie Board ($35): Serves 5-10 people.
+                        Choice of 2 Cheeses, 1 Meat, 1 Spread or Jam, and an assortment of Fruit and Nuts.
+                    </div>
+                    <div id="large-board">
+                        Large Charcuterie Board($65): Serves 10-20 people.
+                        Includes a choice of 3 Cheeses, 2 Meats, 3 Spreads or Jams, and an assortment of Fruits and Nuts.
+                    </div>
+                    <h2>Choices</h2>
+                    <div id="choice-container">
+                        <div id="cheese">
+                            <h3>Cheese</h3>
+                            <dl>
+                                <dd>Cheddar</dd>
+                                <dd>Smoked Gouda</dd>
+                                <dd>Herbed Goat</dd>
+                                <dd>Blueberry Brie</dd>
+                                <dd>Creamy Pimento</dd>
+                            </dl>
+                        </div>
+                        <div id="meat">
+                            <h3>Seitan Meat</h3>
+                            <dl>
+                                <dd>Mild Herbed Salami</dd>
+                                <dd>Spicy Pepperoni</dd>
+                                <dd>Sweet and Smoky Ham</dd>
+                            </dl>
+                        </div>
+                        <div id="spreads">
+                            <h3>Spreads and Jams</h3>
+                            <dl>
+                                <dd>Olive Tapenade</dd>
+                                <dd>Spinach-Artichoke Dip</dd>
+                                <dd>Hummus</dd>
+                                <dd>Vegan Honey</dd>
+                                <dd>Dijon Mustard</dd>
+                                <dd>Pepper Jelly</dd>
+                                <dd>Fruit Jam</dd>
+                            </dl>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -92,7 +150,7 @@
                         <h2>Contact us about your event</h2>
             
                         <div class="group1">
-                            <label for="first-name" >First name:</label>
+                            <label for="first-name">First name:</label>
                             <input type="text" id="first-name" size="10">
                             <label for="last-name">Last name:</label>
                             <input type="text" id="last-name" size="10">
@@ -119,6 +177,6 @@
                         <button type="button" onclick="getValue()">Submit</button>
                     </form>
                 </div>
-            </div>
-        </div>      
+        </div>
+    </div>      
 </body>

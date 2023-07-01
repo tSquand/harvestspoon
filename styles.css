@@ -202,8 +202,41 @@ img {
     padding: 0 15%;
 }
 
-#savoryColumns h1 {
+
+#sweetColumns {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 15%;
+}
+
+#back-home-button {
+    background-color: rgb(255, 246, 234);
+    border: none;
+    cursor: pointer;
+}
+
+#savoryColumns div, #sweetColumns div {
+    width: 100%;
+}
+
+#charcuterieSection {
+    font-family: 'Boston Angel';
+    font-weight: 300;
+    color: rgb(115, 94, 89);
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#choice-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+}
+
+#cheese, #meat, #spreads {
+    margin: 0 50px;
 }
