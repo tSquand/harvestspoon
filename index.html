@@ -41,13 +41,13 @@
         </div>
     </div>
     <div id="menu-container">
+        <span id="menuBar" style="display: none;">
+            <button class="sectionButton" id="canapes" onclick="displaySection('canapes')">Canapés</button>
+            <button class="sectionButton" id="charcuterie" onclick="displaySection('charcuterie')">Charcuterie</button>
+        </span>
         <button id="back-home-button" style="display: none;">
             <i class="material-icons" style="font-size: 30px; color: rgb(115,94,89);">arrow_back</i>
             </button>
-        <span id="menuBar" style="display: none;">
-            <button id="canapes" onclick="displaySection('canapes')">Canapés</button>
-            <button id="charcuterie" onclick="displaySection('charcuterie')">Charcuterie</button>
-        </span>
 
         <div id="canapesSection" style="display: none;">
             <div id="savoryColumns">
@@ -96,14 +96,13 @@
             <div>
                 <div id="board-choice">
                     <div id="small-board">
-                        Small Charcuterie Board ($35): Serves 5-10 people.
-                        Choice of 2 Cheeses, 1 Meat, 1 Spread or Jam, and an assortment of Fruit and Nuts.
+                        <div id="small-title"><b>Small Charcuterie Board ($35):</b>&nbsp;Serves 5-10 people</div>
+                        <div id="small-choice">Choice of 2 Cheeses, 1 Meat, 1 Spread or Jam, and an assortment of Fruit and Nuts.</div>
                     </div>
                     <div id="large-board">
-                        Large Charcuterie Board($65): Serves 10-20 people.
-                        Includes a choice of 3 Cheeses, 2 Meats, 3 Spreads or Jams, and an assortment of Fruits and Nuts.
-                    </div>
-                    <h2>Choices</h2>
+                       <div id="large-title"><b>Large Charcuterie Board ($65):</b>&nbsp;Serves 10-20 people</div>
+                        <div id="large-choice">Includes a choice of 3 Cheeses, 2 Meats, 3 Spreads or Jams, and an assortment of Fruits and Nuts.</div>
+                    </div>                
                     <div id="choice-container">
                         <div id="cheese">
                             <h3>Cheese</h3>
@@ -146,35 +145,35 @@
         <div class="modal-content">
             <span class="close">&times;</span>
                 <div class="form-container">
-                    <form id="input-form">
+                    <form id="input-form" action="https://formspree.io/f/xgejwjvz" method="POST">
                         <h2>Contact us about your event</h2>
             
                         <div class="group1">
                             <label for="first-name">First name:</label>
-                            <input type="text" id="first-name" size="10">
+                            <input type="text" name="first-name" size="10">
                             <label for="last-name">Last name:</label>
-                            <input type="text" id="last-name" size="10">
+                            <input type="text" name="last-name" size="10">
             
                         </div>
                         <div class="group2">
                             <label for="Email">Email:</label>
-                            <input type="email" id="email">
+                            <input type="email" name="email">
                             <label for="number">Phone number:</label> 
-                            <input type="text" id="number" size="10"> 
+                            <input type="text" name="number" size="10"> 
             
                         </div>
                         <div class="group3">
                             <label for="date">Order date:</label>
-                            <input type="date" id="date">
+                            <input type="date" name="date">
                             <label for="guests">Estimated number of guests:</label>
-                            <input type="number" id="guests" size="10">                
+                            <input type="number" name="guests" size="10">                
                         </div>
                         <div class="group4">           
                             <label for="notes">Please enter any additional information or dietary restrictions</label>
                         </div>
                         <textarea id="notes" rows="5" cols="50"></textarea> 
 
-                        <button type="button" onclick="getValue()">Submit</button>
+                        <button type="submit">Submit</button>
                     </form>
                 </div>
         </div>

@@ -167,14 +167,7 @@ img {
     height: auto;
 }
 
-#canapes {
-    background-color: rgb(115, 94, 89);
-    color: rgb(255, 246, 234);
-    font-size: 1.3em;
-    cursor: pointer;
-}
-
-#charcuterie {
+.sectionButton {
     background-color: rgb(115, 94, 89);
     color: rgb(255, 246, 234);
     font-size: 1.3em;
@@ -223,6 +216,7 @@ img {
     font-family: 'Boston Angel';
     font-weight: 300;
     color: rgb(115, 94, 89);
+    margin-top: 25px;
 }
 
 h2 {
@@ -239,4 +233,27 @@ h2 {
 
 #cheese, #meat, #spreads {
     margin: 0 50px;
+}
+
+#small-title, #large-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+}
+
+#small-choice, #large-choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+
+}
+
+#choice-container {
+    font-size: 1.3em;
+}
+
+.selected {
+    background-color: #af8686;
 }
