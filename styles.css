@@ -101,27 +101,45 @@ button {
     display: block;
 }
 
-
-#guests {
-    width: 40px;
-}
-
-#date {
-    width: 100px;
-}
-
-#email {
-    width: 110px;
-}
-
 div {
     margin-bottom: 5px;
 }
 
 .form-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+}
+
+.group1, .group2, .group3 {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    width: 100%;
+    gap: 9%;
+}
+
+.group1 label, .group2 label, .group3 label {
+    width: 100%;
+}
+
+.group1 div, .group2 div, .group3 div {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.group4 {
+    width: 100%;
+    text-align: center;
+}
+
+.group4 textarea {
+    display: block;
+    margin: auto;
+    width: 90%;
 }
 
 .modal {
@@ -137,11 +155,27 @@ div {
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: rgb(255, 246, 234);
     margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    border: 3px solid #0c0c0c;
     width: 30%;
+}
+
+#modalBtnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modalBtn {
+    background-color: rgb(115, 94, 89);
+    color: rgb(255, 246, 234);
+    font-size: 1.3em;
+    cursor: pointer;
 }
 
 .close {
@@ -256,4 +290,14 @@ h2 {
 
 .selected {
     background-color: #af8686;
+}
+
+#footNote {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: rgb(115, 94, 89);
 }

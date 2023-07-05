@@ -139,8 +139,9 @@
             </div>
         </div>
     </div>
-
+    <div id="modalBtnContainer">
     <button id="modalBtn" style="display: none;">Request an order</button>
+    </div>
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -149,33 +150,47 @@
                         <h2>Contact us about your event</h2>
             
                         <div class="group1">
-                            <label for="first-name">First name:</label>
-                            <input type="text" name="first-name" size="10">
-                            <label for="last-name">Last name:</label>
-                            <input type="text" name="last-name" size="10">
-            
+                            <div>
+                                <label for="first-name">First name:</label>
+                                <input type="text" name="first-name" size="20">
+                            </div>
+                            <div> 
+                                <label for="last-name">Last name:</label>
+                                <input type="text" name="last-name" size="20">
+                            </div>                                   
                         </div>
                         <div class="group2">
-                            <label for="Email">Email:</label>
-                            <input type="email" name="email">
-                            <label for="number">Phone number:</label> 
-                            <input type="text" name="number" size="10"> 
-            
+                            <div>
+                                <label for="Email">Email:</label>
+                                <input type="email" name="email" size="30">
+                            </div>
+                            <div>
+                                <label for="number">Phone number:</label> 
+                                <input type="text" name="number" size="10"> 
+                            </div>            
                         </div>
                         <div class="group3">
-                            <label for="date">Order date:</label>
-                            <input type="date" name="date">
-                            <label for="guests">Estimated number of guests:</label>
-                            <input type="number" name="guests" size="10">                
+                            <div>
+                                <label for="date">Order date:</label>
+                                <input type="date" name="date">
+                            </div>
+                            <div>
+                                <label for="guests">Est. number of guests:</label>
+                                <input type="number" name="guests" size="10">
+                            </div>                
                         </div>
                         <div class="group4">           
                             <label for="notes">Please enter any additional information or dietary restrictions</label>
                         </div>
-                        <textarea id="notes" rows="5" cols="50"></textarea> 
+                        <textarea name="notes" rows="5" cols="50"></textarea> 
 
                         <button type="submit">Submit</button>
+                        
                     </form>
                 </div>
         </div>
-    </div>      
+    </div> 
+    <div id="footNote">
+        Minimum order of $200 for pick-up and $400 for on-site events. 15% gratuity added for delivery or on-site events. For full-service events, staffing and service charges will be assessed in addition to food costs. Gluten-free options available for select items.
+    </div>     
 </body>
