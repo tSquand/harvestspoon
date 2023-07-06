@@ -17,6 +17,7 @@ viewMenuButton.onclick = function() {
     canapesSection.style.display = "block";
     modalBtn.style.display = "block";
     document.getElementById('canapes').classList.add('selected');
+    footNote.style.display = "flex";
 }
 
 backHomeButton.onclick = function() {
@@ -27,6 +28,7 @@ backHomeButton.onclick = function() {
     canapesSection.style.display = "none";
     charcuterieSection.style.display = "none";
     modalBtn.style.display = "none";
+    footNote.style.display = "none";
 }
 
 
