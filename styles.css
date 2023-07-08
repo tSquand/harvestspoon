@@ -317,6 +317,7 @@ h2 {
 @media (max-width: 768px) {
     #savoryColumns, #sweetColumns {
         flex-direction: column;
+        width: 80%;
     }
 
     .modal-content {
