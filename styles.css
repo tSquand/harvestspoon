@@ -20,7 +20,12 @@
     font-style: normal;
 }
 
-
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('fonts/CormorantGaramond-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
     background-color: rgb(255, 246, 234);
@@ -81,7 +86,8 @@ h2 {
 }
 
 #view-menu-button {
-    background-color: rgb(115, 94, 89);
+    font-family: 'Cormorant Garamond';
+    background-color: rgb(138, 154, 91);
     color: rgb(255, 246, 234);
     cursor: pointer;
     font-size: 1.6em;
@@ -185,7 +191,8 @@ div {
 }
 
 #modalBtn {
-    background-color: rgb(115, 94, 89);
+    font-family: 'Cormorant Garamond';
+    background-color: rgb(138, 154, 91);
     color: rgb(255, 246, 234);
     font-size: 1.3em;
     cursor: pointer;
@@ -215,11 +222,14 @@ img {
 }
 
 .sectionButton {
-    background-color: rgb(115, 94, 89);
+    font-family: 'Cormorant Garamond';
+    background-color: rgb(138, 154, 91);
     color: rgb(255, 246, 234);
     font-size: 1.3em;
     cursor: pointer;
 }
+
+
 
 #menuBar {
     display: flex;
@@ -230,8 +240,8 @@ img {
 
 
 #canapesSection {
-    font-family: 'Boston Angel';
-    font-weight: 300;
+    font-family: 'Cormorant Garamond';
+    font-weight: normal;
     font-size: 1.3em;
     color: rgb(115, 94, 89);
     
@@ -265,6 +275,11 @@ img {
     font-weight: 300;
     color: rgb(115, 94, 89);
     margin-top: 25px;
+}
+
+#choice-container dd {
+    font-family: 'Cormorant Garamond';
+    font-weight: normal;
 }
 
 h2 {
@@ -301,10 +316,11 @@ h2 {
 
 
 .selected {
-    background-color: #af8686;
+    background-color: rgb(87, 97, 52);
 }
 
 #footNote {
+    font-family: 'Cormorant Garamond';
     flex-shrink: 0;
     width: 95%;
     display: flex;
