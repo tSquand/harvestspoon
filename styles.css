@@ -338,6 +338,11 @@ img {
     text-decoration: underline;
 }
 
+.description {
+    font-family: 'Cormorant Garamond';
+    font-weight: normal;
+    font-size: 1.2em;
+}
 
 @media (max-width: 1024px) {
     #savoryColumns, #sweetColumns {
