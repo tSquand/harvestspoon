@@ -5,28 +5,25 @@ var viewMenuButton = document.getElementById("view-menu-button");
 var menuBar = document.getElementById("menuBar");
 var aboutUsSection = document.getElementById("about-us-section");
 var backHomeButton = document.getElementById("back-home-button");
-var canapesSection = document.getElementById("canapesSection");
 var footNote = document.getElementById("footNote");
-
+var menuContainer = document.getElementById("menu-container");
 
 viewMenuButton.onclick = function() {
     menuBar.style.display = "flex";
+    menuContainer.style.display = "block";
     viewMenuButton.style.display = "none";
     aboutUsSection.style.display = "none";
     backHomeButton.style.display = "block";
-    canapesSection.style.display = "block";
     modalBtn.style.display = "block";
-    document.getElementById('canapes').classList.add('selected');
     footNote.style.display = "flex";
 }
 
 backHomeButton.onclick = function() {
+    menuContainer.style.display = "none";
     menuBar.style.display = "none";
     viewMenuButton.style.display = "block";
     aboutUsSection.style.display = "block";
     backHomeButton.style.display = "none";
-    canapesSection.style.display = "none";
-    charcuterieSection.style.display = "none";
     modalBtn.style.display = "none";
     footNote.style.display = "none";
 }
@@ -47,8 +44,6 @@ window.onclick = function(event) {
 }
 
 function displaySection(section) {
-    document.getElementById('canapesSection').style.display = 'none';
-    document.getElementById('charcuterieSection').style.display = 'none';
     document.getElementById(section + 'Section').style.display = 'block';  
 
     var buttons = document.getElementsByClassName('sectionButton');
