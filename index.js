@@ -8,7 +8,14 @@ var backHomeButton = document.getElementById("back-home-button");
 var footNote = document.getElementById("footNote");
 var menuContainer = document.getElementById("menu-container");
 
+function isMobileDevice() {
+    return /Mobi|Android/i.test(navigator.userAgent);
+}
+
 viewMenuButton.onclick = function() {
+    if (isMobileDevice()) {
+        window.open("HARVEST_SPOON_FULL_MENU.pdf", "_blank");
+    } else {
     menuBar.style.display = "flex";
     menuContainer.style.display = "block";
     viewMenuButton.style.display = "none";
@@ -16,6 +23,7 @@ viewMenuButton.onclick = function() {
     backHomeButton.style.display = "block";
     modalBtn.style.display = "block";
     footNote.style.display = "flex";
+    }
 }
 
 backHomeButton.onclick = function() {
